@@ -3,7 +3,7 @@ import { Menu } from "./Menu";
 
 export function LeftSidebar() {
   return (
-    <aside className="p-layout border-r border-player-bg h-full">
+    <aside className="px-layout border-r border-player-bg h-full py-9">
       <Menu items={MENU_ITEMS} />
 
       <hr className="my-8 border-player-bg" />

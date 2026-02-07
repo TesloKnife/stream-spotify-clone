@@ -1,31 +1,13 @@
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import { musicPlayerStore } from "./store/store";
+import { SearchField } from "./components/elements/SearchField";
 
 function App() {
   return (
-    <>
+    <div>
+      <SearchField />
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <img src="../public/banner.jpg" className="rounded-xl" />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => musicPlayerStore.play("Track 1")}>
-          {musicPlayerStore.isPlaying ? "Pause" : "Play"} Track 1
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   );
 }
 
